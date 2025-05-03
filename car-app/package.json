@@ -1,0 +1,15 @@
+{
+  "name": "car-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js car API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

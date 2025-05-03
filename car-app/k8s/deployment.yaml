@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: car-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: car-app
+  template:
+    metadata:
+      labels:
+        app: car-app
+    spec:
+      containers:
+      - name: car-app
+        image: your-dockerhub-username/car-app:latest
+        ports:
+        - containerPort: 3000
