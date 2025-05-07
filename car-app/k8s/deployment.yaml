@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: car-app
-        image: your-dockerhub-username/car-app:latest
+        image: shaliga/car-image:latest
         ports:
         - containerPort: 3000
