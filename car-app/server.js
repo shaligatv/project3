@@ -38,5 +38,5 @@ app.post('/cars', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚗 Car API is running at http://localhost:${PORT}`);
+  console.log(`🚗 Car API is running at http://0.0.0.0:${PORT}`);
 });
