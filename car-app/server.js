@@ -37,6 +37,6 @@ app.post('/cars', (req, res) => {
   res.status(201).json(car);
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚗 Car API is running at http://0.0.0.0:${PORT}`);
 });
