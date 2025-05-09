@@ -8,6 +8,6 @@ spec:
   ports:
     - protocol: TCP
       port: 80         # This is the internal port in the pod
-      targetPort: 80   # This is the container port
+      targetPort: 3000   # This is the container port
       nodePort: 30001  # Exposing the service on port 30001 on the node
   type: NodePort
