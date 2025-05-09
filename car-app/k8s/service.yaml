@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: car-app-service
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: car-app
   ports:
     - protocol: TCP
       port: 3000       # External service port
       targetPort: 3000 # Port used by the app inside the pod
+      nodePort: 30001  # NodePort must be written with capital 'P'
