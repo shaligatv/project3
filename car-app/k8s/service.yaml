@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: car-app-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
-    app: car-app
+    app: car-app  
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 3000
-        
+      port: 80        
+      targetPort: 3000 
+      nodePort: 30001  
