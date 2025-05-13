@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: car-app-service
 spec:
+  type: NodePort
   selector:
-    app: car-app  # Ensure this selector matches your pod labels
+    app: car-app
   ports:
     - protocol: TCP
-      port: 80         # This is the internal port in the pod
-      targetPort: 3000   # This is the container port
-      nodePort: 30001  # Exposing the service on port 30001 on the node
-  type: NodePort
+      port: 80
+      targetPort: 3000
+      nodePort: 30001
